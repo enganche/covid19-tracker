@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ProgressBar from './progress';
 
 
 function Display() {  
@@ -14,6 +15,7 @@ function Display() {
   }, []);
 
   async function getData() {
+    
     let response = await fetch('https://coronavirus-19-api.herokuapp.com/countries/vietnam');
     let data = await response.json();
 
@@ -26,6 +28,11 @@ function Display() {
 
   return (
       <div>
+        <ProgressBar 
+          cases={cases}
+          activeCases={activeCases}
+          deadCases={deadCases}
+          recoveredCases={recoveredCases}  />
         <div className="display">
             <p>Tổng số ca: {cases}</p>
             <p>Ca mắc mới: {newCases}</p>
@@ -33,7 +40,7 @@ function Display() {
             <p>Ca hồi phục: {recoveredCases}</p>
             <p>Ca đang điều trị: {activeCases}</p>
         </div>
-        <p>Tin tức: Trong 24h qua Việt Nam {newCases ? 'ghi nhận ${newCases} ca mắc mới' : 'không ghi nhận ca mắt mới'}</p>
+        <p>Tin tức: Trong 24h qua Việt Nam {newCases ? 'ghi nhận ${newCases} ca mắc mới' : 'không ghi nhận ca mắc mới'}</p>
         <p>Thông tin: Dân số Việt Nam khoảng 97 triệu người</p>
       </div>
   );

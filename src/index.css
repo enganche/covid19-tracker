@@ -16,6 +16,7 @@ h1 {
 
 .display {
   display: flex;
+  padding: 20px;
 }
 
 .display p {
@@ -24,4 +25,57 @@ h1 {
   padding: 20px;
   margin: auto;
   background-color: rgba(0, 166, 255, 0.5);
+}
+
+.bar {
+  height: 40px;
+  width: 95%;
+  background-color: aliceblue;
+}
+
+#progress {
+  display: inline-flex;
+}
+
+.recover {
+  height: 40px;
+  width: 90%;
+  background-color: aqua;
+}
+
+.dead {
+  height: 40px;
+  width: 1%;
+  background-color: brown;
+}
+
+.info {
+  display: flex;
+  margin-top: 10px;
+}
+
+.info p {
+  margin: auto;
+  font-size: large;
+  font-weight: 450;
+}
+
+.icon {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.blue {
+  background-color: aqua;
+}
+
+.red {
+  background-color: brown;
+}
+
+.white {
+  background-color: antiquewhite;
 }
