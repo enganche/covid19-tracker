@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: aliceblue;
+  opacity: 99%;
+  background-image: url(https://www.metronetinc.com/wp-content/uploads/COVID-19-IMAGE_1920X1080.jpg);
+}
+
+h1 {
+  margin: 15% 0 10% 0;
+}
+
+.display {
+  display: flex;
+}
+
+.display p {
+  font-size: x-large;
+  font-weight: bold;
+  padding: 20px;
+  margin: auto;
+  background-color: rgba(0, 166, 255, 0.5);
+}
