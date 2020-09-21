@@ -11,6 +11,10 @@ Dữ liệu được lấy từ trang [Worldometers](https://www.worldometers.in
 
 ![Ảnh chụp màn hình](/public/screenshot.png)
 
+Để cài đặt, gõ:
+
+### `npm install`
+
 Để chạy, gõ:
 
 ### `npm start`

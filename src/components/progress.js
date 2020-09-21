@@ -10,8 +10,6 @@ function ProgressBar(props) {
         const recoveredBar = document.querySelector('.recover');
         const deadBar = document.querySelector('.dead');
 
-        const count = parseInt(recovered / total * 100);
-
         recoveredBar.style.width = parseInt(recovered / total * 100) + '%';
         deadBar.style.width = parseInt(dead / total * 100) + '%';
     }
