@@ -5,9 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: aliceblue;
+  color: dimgrey;
+  background-color: azure;
   opacity: 99%;
-  background-image: url(https://www.metronetinc.com/wp-content/uploads/COVID-19-IMAGE_1920X1080.jpg);
 }
 
 h1 {
@@ -24,7 +24,14 @@ h1 {
   font-weight: bold;
   padding: 20px;
   margin: auto;
-  background-color: rgba(0, 166, 255, 0.5);
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.show {
+  background-color: rgba(0, 0, 0, .1);
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
 }
 
 .bar {
