@@ -27,7 +27,7 @@ function Display() {
   }
 
   return (
-      <div>
+      <div className="show">
         <ProgressBar 
           cases={cases}
           activeCases={activeCases}
@@ -40,8 +40,9 @@ function Display() {
             <p>Ca hồi phục: {recoveredCases}</p>
             <p>Ca đang điều trị: {activeCases}</p>
         </div>
-        <p>Tin tức: Trong 24h qua Việt Nam {newCases ? 'ghi nhận ${newCases} ca mắc mới' : 'không ghi nhận ca mắc mới'}</p>
-        <p>Thông tin: Dân số Việt Nam khoảng 97 triệu người</p>
+        <p>Tin tức: Trong 24h qua Việt Nam {
+        newCases ? 'ghi nhận ${newCases} ca mắc mới' : 'không ghi nhận ca mắc mới'
+        }</p>
       </div>
   );
 }
