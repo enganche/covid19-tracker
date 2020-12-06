@@ -43,7 +43,8 @@ function Display() {
         </div>
         <p>Tin tức: Trong 24h qua Việt Nam {
         newCases ? 'ghi nhận ${newCases} ca mắc mới' : 'không ghi nhận ca mắc mới'
-        }</p>
+        }
+        </p>
       </div>
   );
 }
