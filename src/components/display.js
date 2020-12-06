@@ -16,7 +16,8 @@ function Display() {
 
   async function getData() {
     
-    let response = await fetch('https://coronavirus-19-api.herokuapp.com/countries/vietnam');
+    let url = 'https://coronavirus-19-api.herokuapp.com/countries/vietnam';
+    let response = await fetch(url);
     let data = await response.json();
 
     setCase(data.cases);
