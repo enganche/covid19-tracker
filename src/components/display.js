@@ -15,9 +15,14 @@ function Display() {
   }, []);
 
   async function getData() {
+
+    //Lấy data từ API
     
     let url = 'https://coronavirus-19-api.herokuapp.com/countries/vietnam';
     let response = await fetch(url);
+
+    //Store data vào biến
+
     let data = await response.json();
 
     setCase(data.cases);
@@ -33,7 +38,7 @@ function Display() {
           cases={cases}
           activeCases={activeCases}
           deadCases={deadCases}
-          recoveredCases={recoveredCases}  />
+          recoveredCases={recoveredCases} />
         <div className="display">
             <p>Tổng số ca: {cases}</p>
             <p>Ca mắc mới: {newCases}</p>
@@ -41,10 +46,6 @@ function Display() {
             <p>Ca hồi phục: {recoveredCases}</p>
             <p>Ca đang điều trị: {activeCases}</p>
         </div>
-        <p>Tin tức: Trong 24h qua Việt Nam {
-        newCases ? 'ghi nhận ${newCases} ca mắc mới' : 'không ghi nhận ca mắc mới'
-        }
-        </p>
       </div>
   );
 }

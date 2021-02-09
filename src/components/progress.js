@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 
 function ProgressBar(props) {
 
+    /*Tạo progress bar
+    nhưng cái này nhìn đểu quá
+    chắc xóa*/
+
     function progress() {
 
         const total = props.cases;
