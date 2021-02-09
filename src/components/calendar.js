@@ -1,6 +1,8 @@
 import React from 'react';
 
 function GenerateDay() {
+
+  //Hiển thị thứ ngày tháng bằng tiếng Việt
     
   let d = new Date();
   const dates = [
