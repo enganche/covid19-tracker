@@ -1,5 +1,10 @@
 import React, { useEffect } from 'react';
 
+/*
+@<param> props: lấy props từ component <Display />
+@<return> biểu đồ thống kê (hiện tại không chính xác)
+*/
+
 function ProgressBar(props) {
 
     /*Tạo progress bar

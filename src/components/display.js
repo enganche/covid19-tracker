@@ -4,17 +4,17 @@ import ProgressBar from './progress';
 
 function Display() {  
     
-  const [cases, setCase] = useState('Đang lấy...');
-  const [newCases, setNew] = useState('Đang lấy...');
-  const [deadCases, setDead] = useState('Đang lấy...');
-  const [recoveredCases, setRecover] = useState('Đang lấy...');
-  const [activeCases, setActive] = useState('Đang lấy...');
+  const [cases, setCase] = useState('Đang lấy...'); //Tổng số ca nhiễm
+  const [newCases, setNew] = useState('Đang lấy...'); //Số ca nhiễm mới trong vòng 12h
+  const [deadCases, setDead] = useState('Đang lấy...'); //Số ca tử vong
+  const [recoveredCases, setRecover] = useState('Đang lấy...'); //Số ca khỏi bệnh
+  const [activeCases, setActive] = useState('Đang lấy...'); //Số ca đang điều trị
 
   useEffect(() => {
-    getData();
+    fetchData();
   }, []);
 
-  async function getData() {
+  async function fetchData() {
 
     //Lấy data từ API
     
