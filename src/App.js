@@ -9,6 +9,7 @@ function App() {
       <h1>Bạn đang xem: Việt Nam</h1>
       <GenerateDay />
       <Display />
+      <h2>Việt Nam quyết thắng đại dịch!</h2>
     </div>
   );
 }
