@@ -1,6 +1,102 @@
 .App {
   text-align: center;
 }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: grey;
+  background-color: azure;
+  opacity: 99%;
+}
+
+h1 {
+  margin: 15% 0 10% 0;
+}
+
+.display {
+  display: flex;
+  padding: 20px;
+}
+
+.display p {
+  font-size: x-large;
+  font-weight: bold;
+  padding: 20px;
+  margin: auto;
+}
+
+.show {
+  background-color: rgba(0, 0, 0, .1);
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.bar {
+  height: 40px;
+  width: 95%;
+  background-color: aliceblue;
+}
+
+#progress {
+  display: inline-flex;
+}
+
+.recover {
+  height: 40px;
+  width: 90%;
+  background-color: aqua;
+}
+
+.dead {
+  height: 40px;
+  width: 1%;
+  background-color: brown;
+}
+
+.info {
+  display: flex;
+  margin-top: 10px;
+}
+
+.info p {
+  margin: auto;
+  font-size: large;
+  font-weight: 450;
+}
+
+.icon {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.blue {
+  background-color: aqua;
+}
+
+.red {
+  background-color: brown;
+}
+
+.white {
+  background-color: antiquewhite;
+}
+
+@media only screen and (max-width: 575px) {
+  h1 {
+    padding: 0.5rem;
+  }
+  .display {
+    display: block;
+  }
+}
 
 .App-logo {
   height: 40vmin;
