@@ -1,7 +1,7 @@
 import React from 'react';
 import GenerateDay from './components/calendar';
 import Display from './components/display';
-import '.App.css';
+import './App.css';
 
 function App() {  
 
