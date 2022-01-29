@@ -3,6 +3,8 @@
 Nền tảng: **React**
 Người thực hiện: **Nguyễn Anh Tuấn**
 
+Xem demo tại: https://covid19tracker-ten.vercel.app
+
 Dữ liệu được lấy từ trang [Worldometers](https://www.worldometers.info/coronavirus/) thông qua https://coronavirus-19-api.herokuapp.com/
 
 #### Ảnh màn hình trang web
