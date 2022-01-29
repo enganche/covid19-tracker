@@ -3,8 +3,6 @@
 Nền tảng: **React**
 Người thực hiện: **Nguyễn Anh Tuấn**
 
-> Dự án nhằm mục đích học tập, chưa bao giờ được sử dụng trong thực tế vì tác giả không có tiền up hihi.:grinning:
-
 Dữ liệu được lấy từ trang [Worldometers](https://www.worldometers.info/coronavirus/) thông qua https://coronavirus-19-api.herokuapp.com/
 
 #### Ảnh màn hình trang web
